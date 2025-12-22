@@ -1,0 +1,1 @@
+// You can use max() and min() commands too, These are predefined functions.
