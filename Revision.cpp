@@ -16,7 +16,7 @@ int main(){
         a+=1;
     }
     cout << endl;
-      b+=1;
+      b+=1;   
       a=1;}
       cout << endl;
       b = 1;
