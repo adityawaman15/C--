@@ -10,8 +10,9 @@ int main(){
   while (a>0){
     temp = a;
     while (temp > 0){
-    cout << "*";
+    cout << temp << " ";
     temp -=1;}
+    cout << endl;
     a-=1;
   }
 }
