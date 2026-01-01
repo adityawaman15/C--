@@ -10,7 +10,8 @@ int main(){
   while (a>0){
     a = temp;
     while (temp > 0){
-    cout << "*";}
+    cout << "*";
+    temp -=1;}
     a-=1;
   }
 }
