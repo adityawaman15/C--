@@ -4,15 +4,17 @@ using namespace std;
 int main(){
   cout << "Enter | ";
   int a ;
-  int temp;
+  int temp = a;
+  int b = a;
   cin >> a;
 
-  while (a>0){
+  while (b>0){
     temp = a;
-    while (temp > 0){
+    while (temp < b){
     cout << temp << " ";
-    temp -=1;}
+    temp +=1;}
     cout << endl;
     a-=1;
+    b-=1;
   }
 }
