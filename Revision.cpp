@@ -8,7 +8,7 @@ int main(){
   cin >> a;
 
   while (a>0){
-    a = temp;
+    temp = a;
     while (temp > 0){
     cout << "*";
     temp -=1;}
