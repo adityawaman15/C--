@@ -1,22 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int pow(int a, int b){
-    int ans = 1;
-    if (b==0){
-        return 1;
-    }
-    for (int i = 0 ; i < b; i++){
-
-      ans *= a;
-        
-    }
-    return ans;
-}
 int main(){
+    int array[10] = {0};
+    cout << array[1] << endl;
 
-    int answer = pow(3,4);
-    cout << answer;
-
-
+    array = {1,2,3};
+    cout << array[1] << endl;
+    cout << array[2] << endl;
+    cout << array[3] << endl;
 }
