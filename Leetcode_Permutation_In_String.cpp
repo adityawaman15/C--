@@ -11,8 +11,8 @@ int main(){
 
     }
 
-    for(char i = 0; i<s2.length(); i++){
-        cout << i + 'a' << " = " << count[i] << endl;
+    for(int i = 0; i<s2.length(); i++){
+        cout << char(i + 'a') << " = " << count[i] << endl;
 
     }
     
