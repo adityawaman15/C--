@@ -1,20 +1,39 @@
 #include <iostream>
 using namespace std;
 
+bool (int a[], int b[]){
+    for (int i = 0; i <26;i++){
+        if(count1[i] != count2[i]){
+            return false;
+        }
+    }
+    return true;
+
+}
+
 int main(){
 
     string s2 = "eidbaoooo";
-    int count[26] = {0};
+    string s1 = "ab";
 
-    for (int i = 0; i< s2.length(); i++){
-        count[s2[i] - 'a']++;
+    int count1[26] = {0};
+    int count2[26] = {0};
 
+    for(int i = 0; i < s1.length(); i++){
+        count1[s1[i] - 'a']++;
     }
 
-    for(int i = 0; i<s2.length(); i++){
-        cout << char(i + 'a') << " = " << count[i] << endl;
+    for (int i = 0; i < s2.length(); i++){
 
+        count2[26];
+        
     }
+
+    
+
+
+
+    
     
 
 
