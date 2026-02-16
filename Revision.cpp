@@ -23,6 +23,11 @@ int main(){
     cout << array[1] << endl;
     inputArray(array,10);
     cout << "The Array you entered is :- "<< endl;
-    printArray(array,10);}
+    printArray(array,10);
+
+    cout <<"The maximum value of array is | "<< max(array)<< endl;
+
+
+}
 
 
