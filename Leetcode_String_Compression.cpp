@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void func(){
+    number = 10;
+    vector<char> digits;
+    while(number!=0){
+        
+
+    }
+
+}
+
 int main(){
     string s= "aaabbcccc";
     char a = s[0];

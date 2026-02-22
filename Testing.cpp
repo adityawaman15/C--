@@ -3,8 +3,11 @@
 using namespace std;
 
 int main(){
-    int number = 100;
+    int number = 10;
+    int ount;
     vector<char> a; 
-    cout << sizeof(number);
+    while(number!= 0){
+        
+    }
     
 }
