@@ -2,11 +2,11 @@
 using namespace std;
 
 bool sort(int arr[], int size, int idx = 0){
-    if(idx == size-2){
+    if(idx == size-1){
         return true;
     }
 
-    return arr[idx+1] > arr[idx] && sort(arr,idx +1);
+    return arr[idx+1] > arr[idx] && sort(arr,size,idx +1);
 
 
 }
