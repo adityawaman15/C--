@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-bool sort(int arr[], int idx = 0){
-    if(idx == sizeof(arr)/sizeof(arr[0]) ){
+bool sort(int arr[], int size, int idx = 0){
+    if(idx == size-2){
         return true;
     }
 
@@ -12,7 +12,7 @@ bool sort(int arr[], int idx = 0){
 }
 
 int main(){
-    int arr[] = {8,9,23,24,46,56,76,87,86};
-    int ans = sort(arr);
+    int arr[9] = {8,9,23,24,46,56,76,87,86};
+    int ans = sort(arr,9);
     cout << ans;
 }
