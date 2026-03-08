@@ -13,7 +13,7 @@ int factorial(int n){
 }
 
 int main(){
-    int ans = factorial(-1);
+    int ans = factorial(5);
 
     cout << ans << endl;
 }
