@@ -10,8 +10,9 @@ void spell(int n){
     if(n==0){
         return;
     }
-    say(n%10);
+    
     spell(n/10);
+    say(n%10);
 
 }
 int main(){
