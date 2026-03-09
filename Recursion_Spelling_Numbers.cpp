@@ -6,9 +6,15 @@ void say(int n){
     cout << arr[n]<< endl;
 }
 
-void spell(){
+void spell(int n){
     if(n==0){
         return 
     }
+    say(n %10);
+    spell(n/10);
 
+}
+int main(){
+    int n = 416;
+    spell(416);
 }
