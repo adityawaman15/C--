@@ -16,6 +16,6 @@ int stairs(int n){
 }
 
 int main(){
-    int ans = stairs(6);
+    int ans = stairs(2);
     cout << ans << endl;
 }
