@@ -17,4 +17,5 @@ int stairs(int n){
 
 int main(){
     int ans = stairs(8);
+    cout << ans << endl;
 }
