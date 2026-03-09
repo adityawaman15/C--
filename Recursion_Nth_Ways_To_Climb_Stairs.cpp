@@ -10,12 +10,12 @@ int stairs(int n){
     }
     cout << "Stair | "<< n << endl;
 
-    int ans = stairs(n-1) + stairs(n-2);
+    int ans = stairs(n-1) + stairs(n-2) + stairs(n-3);
     return ans;
 
 }
 
 int main(){
-    int ans = stairs(8);
+    int ans = stairs(6);
     cout << ans << endl;
 }
