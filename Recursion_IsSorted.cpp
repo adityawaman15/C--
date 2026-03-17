@@ -1,19 +1,11 @@
-                                        #include <iostream>
-                                        using namespace std;
+bool isSorted(int *arr, int size){
+    if(size == 0 || size == 1){
+        return true;
+    }
 
-                                        void isSorted(int arr[],int size){
+    if(arr[0] > arr[1]){
+        return false;
+    }
 
-                                            if(size == 0 || size == 1){
-                                                return;
-                                            }
-
-                                            cout << arr[0];
-
-                                            isSorted(arr +1, size -1);
-                                        }
-
-                                        int main(){
-                                            int box[8] = {1,2,3,4,5,6,7,7};
-
-                                            isSorted(box,8);
-                                        }
+    return isSorted(arr + 1, size - 1);
+}
