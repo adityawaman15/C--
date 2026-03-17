@@ -19,7 +19,7 @@ int main(){
 int arr[10] = {5,2,3,5,1,23,54,12,34,23};
 sort(arr,10);
 for(int i:arr){
-    cout << arr[i] << " ";
+    cout << i << " ";
 }
 
 }
