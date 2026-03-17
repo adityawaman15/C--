@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool Search(int arr[], int s,int e, int target){
+bool Search(int arr[], int s,int e, int k){
     if(s>e){
         return false;
     }
@@ -12,10 +12,10 @@ bool Search(int arr[], int s,int e, int target){
     }
 
     if(arr[mid] < k){
-        return binarySearch(arr,mid+1,e,target);
+        return Search(arr,mid+1,e,k);
     }
     else{
-        return binarySearch(arr,s,mid -1,k);
+        return Search(arr,s,mid -1,k);
     }
 }
 
