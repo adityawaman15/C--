@@ -7,8 +7,8 @@ void sort(int *arr, int size){
     }
 
     for(int i = 0; i < size-1;i++){
-        if(arr[1]< arr[0]){
-            swap(arr[1],arr[0]);
+        if(arr[i+1]< arr[i]){
+            swap(arr[i],arr[i+1]);
         }
     }
     sort(arr,size-1);
