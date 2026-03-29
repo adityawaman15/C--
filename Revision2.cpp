@@ -8,6 +8,8 @@ string reverse(string &s){
 
     while(a<=b){
         swap(s[a],s[b]);
+        a++;
+        b--;
     }
 }
 
