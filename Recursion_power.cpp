@@ -13,6 +13,5 @@ int power(int pow){
 
 int main(){
     int ans = power(5);
-    cout << ans << endl;
-}
+    cout << ans << endl;}
 
