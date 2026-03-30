@@ -1,5 +1,5 @@
 #include <iostream>
-using namepsace std;
+using namespace std;
 
 int main(){
     int n;
@@ -7,7 +7,7 @@ int main(){
     cin >> n;
 
     if(n <=1){
-        return n;
+        cout << n;
     }
     else{
         for(int a = 0,b = 1, c = 1,i=0; i<=n-2; i++){
