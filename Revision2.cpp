@@ -1,25 +1,21 @@
 #include <iostream>
-using namespace std;
-
-
-string reverse(string &s){
-    int a = 0;
-    int b = s.length()-1;
-
-    while(a<=b){
-        swap(s[a],s[b]);
-        a++;
-        b--;
-    }
-}
-
+using namepsace std;
 
 int main(){
+    int n;
+    cout << "Enter | ";
+    cin >> n;
 
-    string name = "Ich name ist Aditya.";
-    
-    name = reverse(name);
+    if(n <=1){
+        return n;
+    }
+    else{
+        for(int a = 0,b = 1, c = 1,i=0; i<=n-2; i++){
+            a = b; 
+            b = c;
+            c = a+b;
 
-    cout << name << endl;
-
+            cout << c << endl;
+        }
+    }
 }
