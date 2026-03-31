@@ -1,21 +1,17 @@
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 int main(){
-    int n;
-    cout << "Enter | ";
-    cin >> n;
 
-    if(n <=1){
-        cout << n;
-    }
-    else{
-        for(int a = 0,b = 1, c = 1,i=0; i<=n-2; i++){
-            a = b; 
-            b = c;
-            c = a+b;
+int a = 1;
+int i = a++;
+<vector<vector>int> matrix(3,<vector<int>>(3,i));
 
-            cout << c << endl;
-        }
-    }
+for(int i: matrix){
+    cout << i << endl;
+}
+
+
 }
