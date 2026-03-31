@@ -3,6 +3,19 @@
 
 using namespace std;
 
+
+
+void zero(int r, int c, &vector<vector<int>> matrix){
+
+    for(int i = 0; i< cols; i++){
+        matrix[i][r] = 0;
+    }
+    for(int i = 0; i <rows;i++){
+        matrix[c][i] = 0;
+    }
+
+
+}
 int main(){
 int num = 1;
 vector<vector<int>> matrix(4,vector<int>(4,4));
@@ -13,6 +26,8 @@ for(int i = 0; i<matrix.size(); i++){
 
     }
 }
+
+zero(2,3,matrix);
 
 for(int i = 0; i < 16; i++){
 
