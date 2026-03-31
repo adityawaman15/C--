@@ -14,5 +14,11 @@ for(int i = 0; i<matrix.size(); i++){
     }
 }
 
+for(int i = 0; i < 16; i++){
 
-}
+    cout << matrix[i/4][i%4] << " ";
+    if( (i+1)%4 == 0){
+        cout << endl;
+    }
+
+}}
