@@ -5,13 +5,15 @@ using namespace std;
 
 
 
-void zero(int r, int c, &vector<vector<int>> matrix){
+void zero(int r, int c, vector<vector<int>>& matrix){
+    int cols = 4;
+    int rows = 4;
 
     for(int i = 0; i< cols; i++){
-        matrix[i][r] = 0;
+        matrix[i][r-1] = 0;
     }
     for(int i = 0; i <rows;i++){
-        matrix[c][i] = 0;
+        matrix[c-1][i] = 0;
     }
 
 
