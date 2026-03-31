@@ -4,15 +4,14 @@
 using namespace std;
 
 int main(){
+int num = 1;
+vector<vector<int>> matrix(4,vector<int>(4,4));
 
-int a = 1;
-int i = 1;
- i = i++;
-vector<vector<int>> matrix(3,vector<int>(3,i++));
+for(int i = 0; i<matrix.size(); i++){
+    for(int j = 0; j < matrix[0].size();j++){
+        matrix[i][j] = num++;
 
-for(int i = 0; i < matrix.size()* matrix[0].size(); i++){
-
-    cout << matrix[i/3][i%3] << " ";
+    }
 }
 
 
