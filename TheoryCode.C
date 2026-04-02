@@ -20,8 +20,9 @@ int main(){
         printf("Faculty Salary | ");
         scanf("%d", &num[i].salary);}
     
+        printf("-----Faculty Details----");
         for(int i = 0; i < 10; i++){
-            printf("Faculty Name | %s, Age | %d, Salary | %d", num[i].name, num[i].age, num[i].salary);
+            printf("Faculty Name | %s, Age | %d, Salary | %d\n", num[i].name, num[i].age, num[i].salary);
         }
     
 
