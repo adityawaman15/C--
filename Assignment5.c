@@ -12,7 +12,7 @@ int main(){
     struct student x[10];
     int distinction= 0;
     int n = 10;
-    int overall;
+    int overall = 0;
    
    for(int i = 0; i < n;i++){    
        printf("----Enter marks of student {%d} Out of 100.----\n\n", i+1);
