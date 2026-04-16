@@ -9,6 +9,7 @@ void ArrP(int arr[], int s , int e){
 }
 
 int Partition(int arr[], int s, int e){
+    
     int cnt = 0;
     int p = s;
 
@@ -19,9 +20,10 @@ int Partition(int arr[], int s, int e){
         }
 
     }
-    p = s+ cnt;
+    p = s + cnt;
     swap(arr[p], arr[s]);
     //swapping pivot to it's place!
+    ArrP(arr,s,e);
 
     int i = s;
     int j = e;
@@ -41,7 +43,9 @@ int Partition(int arr[], int s, int e){
         if(arr[i]> arr[j]){
             swap (arr[i], arr[j]);
         }
+        ArrP(arr,s,e);
     }
+    ArrP(arr,s,e);
 
     return p;
 
