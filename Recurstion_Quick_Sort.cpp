@@ -19,7 +19,7 @@ int Partition(int arr[], int s, int e){
         }
 
     }
-    p = 0 + cnt;
+    p = s+ cnt;
     swap(arr[p], arr[s]);
     //swapping pivot to it's place!
 
