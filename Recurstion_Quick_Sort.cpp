@@ -41,7 +41,7 @@ int Partition(int arr[], int s, int e){
 
         //Replacing the found out element
         if(arr[i]> arr[j]){
-            swap (arr[i], arr[j]);
+            swap (arr[i++], arr[j--]);
         }
         ArrP(arr,s,e);
     }
