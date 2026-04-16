@@ -8,8 +8,66 @@ void ArrP(int arr[], int s , int e){
     cout << endl;
 }
 
+int Partition(int arr[], int s, int e){
+    int cnt = 0;
+
+    //Lower than arr[s]
+    for (int i = s; i <= e; i++){
+        if ( arr[i] < p){
+            cnt++;
+        }
+
+    }
+    int p = 0 + cnt;
+    swap(arr[p], arr[s]);
+    //swapping pivot to it's place!
+
+    int i = s;
+    int j = e;
+
+    while( i < p && j > p){
+        // Finding a number that is greater than pivot and placed before pivot
+        while( arr[i] < arr[p]){
+            i++;
+        }
+
+        // Finding a number that is lesser than pivot and placed after pivot
+        while(arr[j] > arr[p]){
+            j--;
+        }
+
+        //Replacing the found out element
+        if(arr[i]> arr[j]){
+            swap (arr[i], arr[j]);
+        }
+    }
+
+    return p;
+
+
+}
+void QuickSort(int arr[], int s, int e){
+    ArrP(arr,s,e);
+
+    if (s >=e){
+        return;
+    }
+
+    int p = Partition(arr, s, e);
+
+    //Sorting left side
+    QuickSort(arr, s, p-1);
+
+    //Sorting Right Side
+    QuickSort(arr, p+1, e);
+
+
+
+}
+
 int main(){
     int arr[6] ={3,1,5,7,2,1};
+    QuickSort(arr,0,5);
     
     ArrP(arr,0,5);
 
