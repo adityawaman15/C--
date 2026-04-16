@@ -10,15 +10,16 @@ void ArrP(int arr[], int s , int e){
 
 int Partition(int arr[], int s, int e){
     int cnt = 0;
+    int p = s;
 
     //Lower than arr[s]
     for (int i = s; i <= e; i++){
-        if ( arr[i] < p){
+        if ( arr[i] < arr[p]){
             cnt++;
         }
 
     }
-    int p = 0 + cnt;
+    p = 0 + cnt;
     swap(arr[p], arr[s]);
     //swapping pivot to it's place!
 
