@@ -22,13 +22,13 @@ class Hero{
     char Name[100];
     int level;
 
-    int getHealth(int h){
+    int getHealth(){
         return health;
     }
     int setHealth(int h){
         health = h;
     }
-    int getLevel(int h){
+    int getLevel(){
         return level;
     }
     int setLevel(int h){
@@ -43,9 +43,12 @@ int main(){
     Hero Aditya;
     sizeof(Aditya);
 
-    int hp = Aditya.setHealth(1000);
-    int lvl = Aditya.setLevel(3);
+    Aditya.setHealth(1000);
+    int hp = Aditya.getHealth();
+
+    Aditya.setLevel(11);
+    int lvl = Aditya.getLevel();
     
-    cout << "Health of Character" << hp << endl;
-    cout << "Level of Character" << lvl << endl;
+    cout << "Health of Character | " << hp << endl;
+    cout << "Level of Character | " << lvl << endl;
 }
