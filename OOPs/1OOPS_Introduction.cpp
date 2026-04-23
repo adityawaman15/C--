@@ -19,6 +19,10 @@ class Hero{
     int health;
 
     public:
+
+    Hero(){
+        cout << "Constructor Called !" << endl;
+    }
     char Name[100];
     int level;
 
