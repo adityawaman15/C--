@@ -34,7 +34,7 @@ class Hero{
     int setLevel(int h){
         level = h;
     }
-     cout << "Constructor Initialized" << endl;
+     
 
 
 };
@@ -42,4 +42,10 @@ class Hero{
 int main(){
     Hero Aditya;
     sizeof(Aditya);
+
+    int hp = Aditya.setHealth(1000);
+    int lvl = Aditya.setLevel(3);
+    
+    cout << "Health of Character" << hp << endl;
+    cout << "Level of Character" << lvl << endl;
 }
