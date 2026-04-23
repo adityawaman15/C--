@@ -13,6 +13,8 @@
 using namespace std;
 
 class Hero{
+
+   
     private:
     int health;
 
@@ -29,14 +31,15 @@ class Hero{
     int getLevel(int h){
         return level;
     }
-    int getHealth(int h){
+    int setLevel(int h){
         level = h;
     }
+     cout << "Constructor Initialized" << endl;
 
 
-}
+};
 
 int main(){
-    hero Aditya;
+    Hero Aditya;
     sizeof(Aditya);
 }
