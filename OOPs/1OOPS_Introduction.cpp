@@ -7,15 +7,36 @@
 
 // Setter and Getter are elements used to access private members
 
+// Whn you create an Object, Constructor is called. What is Constructor?
+
 #include <iostream>
 using namespace std;
 
-int main(){
+class Hero{
+    private:
+    int health;
 
-    int x = 10;
+    public:
+    char Name[100];
+    int level;
 
-    void add( int h){
-    x = h + 10;
+    int getHealth(int h){
+        return health;
     }
-    cout << x << endl;
+    int setHealth(int h){
+        health = h;
+    }
+    int getLevel(int h){
+        return level;
+    }
+    int getHealth(int h){
+        level = h;
+    }
+
+
+}
+
+int main(){
+    hero Aditya;
+    sizeof(Aditya);
 }
