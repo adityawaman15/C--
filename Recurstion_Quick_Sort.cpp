@@ -75,6 +75,4 @@ int main(){
     QuickSort(arr,0,5);
     
     ArrP(arr,0,5);
-
-    
 }

@@ -20,5 +20,7 @@ void reverse(string& str, int i,int j){
 int main(){
     string word = "Aditya";
     reverse(word,0,word.length() -1 );
+
+    
     
 }

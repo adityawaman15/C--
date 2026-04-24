@@ -11,7 +11,7 @@ int main() {
 
     // loop from 0 to 2^n - 1
     for (int num = 0; num < (1 << n); num++) {
-
+y 
         string output = "";
 
         for (int i = 0; i < n; i++) {
