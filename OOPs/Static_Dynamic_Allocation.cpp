@@ -24,12 +24,23 @@ class Hero{
     };
 
 int main(){
-    Hero One;
+    Hero One; // Static Allocation
     One.set_health(2000);
     One.set_lvl(12);
     One.set_name();
 
     cout << "Hero (1) Name: " << One.name << "\nHero(1) Level: "<< One.level << "\nHero(1) Health: "<< One.get_health() << endl;
+
+    //Dynamic Allocation
+    Hero *Two = new Hero;
+
+    //Instead of *Two.set_health, we can use Two->set_health. Either one is correct.
+    Two->set_health(4320);
+    Two->set_lvl(15);
+    Two->set_name("Ikigai");
+
+    cout << "Hero (2) Name: " << Two->name << "\nHero(1) Level: "<< One->level << "\nHero(1) Health: "<< Two->get_health << endl;
+
 
 
 }
