@@ -37,9 +37,9 @@ int main(){
     //Instead of *Two.set_health, we can use Two->set_health. Either one is correct.
     Two->set_health(4320);
     Two->set_lvl(15);
-    Two->set_name("Ikigai");
+    Two->set_name();
 
-    cout << "Hero (2) Name: " << Two->name << "\nHero(1) Level: "<< One->level << "\nHero(1) Health: "<< Two->get_health << endl;
+    cout << "Hero (2) Name: " << Two->name << "\nHero(2) Level: "<< Two->level << "\nHero(2) Health: "<< Two->get_health() << endl;
 
 
 
