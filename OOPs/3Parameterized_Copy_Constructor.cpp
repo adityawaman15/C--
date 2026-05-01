@@ -17,6 +17,7 @@ class Hero{
         this->lvl = lvl;
     }
 
+    //copy constructor
     Hero(Hero& temp){
         this->health = temp.health;
         this->lvl = temp.lvl;
@@ -33,7 +34,6 @@ class Hero{
 int main(){
     Hero Ramesh(3424,12);
     Ramesh.print();
-    Hero Rakesh;
-    Rakesh(Ramesh);
+    Hero Rakesh(Ramesh);
     Rakesh.print();
 }
