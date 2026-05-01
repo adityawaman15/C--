@@ -4,8 +4,8 @@ using namespace std;
 class Hero{
     public:
     int health;
-    int lvl;
-    string name;
+    int *lvl;
+    string *name;
 
     Hero(int health, int lvl, string name){
         this->health = health;
@@ -13,11 +13,7 @@ class Hero{
         this->name=name;
     }
     
-     Hero(Hero& temp){
-        this->health = temp.health;
-        this->lvl = temp.lvl;
-        this->name= temp.name;
-    }
+     
 
     
 
