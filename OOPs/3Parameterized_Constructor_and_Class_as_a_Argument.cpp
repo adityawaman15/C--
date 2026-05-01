@@ -17,8 +17,15 @@ class Hero{
         this->lvl = lvl;
     }
 
+    print(){
+        cout << "Player Details-----" << endl;
+        cout << "Health = " << health<< endl;
+        cout << "Level = " << lvl << endl;
+    }
+
 };
 
 int main(){
-    Hero Ramesh;
+    Hero Ramesh(3424,12);
+    Ramesh.print();
 }
