@@ -30,8 +30,9 @@ int main(){
     Hero Saish(Aditya);
     Saish.print();
 
-    Saish.lvl = 124;
-    Aditya.print();
+    Aditya.lvl = 124;
+    Saish.print();
+    
 
     //So we make a variable inside the function;
 
