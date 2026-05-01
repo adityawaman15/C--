@@ -30,4 +30,11 @@ int main(){
     Hero Saish = Aditya;
     Saish.print();
 
+    Aditya.lvl = 23;
+    Aditya.print();
+    Saish.print();
+
+    //If we make any changes to Aditya or Saish, both will change because they will share the same memory;
+    //So we make a variable inside the function;
+
 }
