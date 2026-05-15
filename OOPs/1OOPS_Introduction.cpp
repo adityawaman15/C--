@@ -1,5 +1,5 @@
 // Size of an empty class is 1 byte
-// Clsases from other c programs can be included usuing #include "file_name
+// Clsases from other c programs can be included usuing #include "file_name"
 // There are 3 types of data member: public, private and protected
 
 //Public can be accesed inside and outside of class
@@ -44,7 +44,11 @@ class Hero{
 };
 
 int main(){
-    Hero Aditya;
+    Hero Aditya(); //stattic allcoatiom
+
+    Hero *b = new Hero; // dynamically allocated in heap memory
+
+    
     sizeof(Aditya);
 
     Aditya.setHealth(1000);
