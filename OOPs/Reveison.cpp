@@ -39,18 +39,18 @@ class Hero{
 };
 int main(){
 
-    Hero Aditya();
+    Hero Aditya;
 
     Hero *b = new Hero();
 
     Aditya.set_health(100);
     Aditya.set_level(4);
-    b.set_health(200);
-    b.set_level(6);
+    b->set_health(200);
+    b->set_level(6);
 
 
     Aditya.print();
-    b.print();
+    b->print();
 
 
 }
