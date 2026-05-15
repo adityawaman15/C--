@@ -2,7 +2,7 @@
 using namespace std;
 
 
-class Hero(){
+class Hero{
     private:
     int health;
     int level;
@@ -51,6 +51,6 @@ int main(){
 
     Aditya.print();
     b.print();
-    
+
 
 }
