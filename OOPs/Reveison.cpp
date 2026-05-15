@@ -36,7 +36,7 @@ class Hero{
     }
 
 
-}
+};
 int main(){
 
     Hero Aditya();
