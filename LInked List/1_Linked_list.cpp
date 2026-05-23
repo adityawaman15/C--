@@ -40,6 +40,7 @@ int main(){
     print(head);
 
     InsertAtHead(head,12);
+    InsertAtHead(head,18);
 
     print(head);
 
