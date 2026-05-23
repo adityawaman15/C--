@@ -13,10 +13,12 @@ class Node{
      }
 };
 
-void InsertAtHead(Node* &head, int d){
+void InsertAtHead(Node* &head,Node* &tail, int d){
     // new node created
     Node* temp = new Node(d);
+    tail = temp->next;
     temp -> next = head;
+    
     head = temp;
 
 }
@@ -41,11 +43,11 @@ int main(){
     //head pointed to node1
     Node* head = node1;
     Node* tail = node1;
-    InsertAtHead(head,12);
-    InsertAtHead(head,18);
+    InsertAtHead(head,tail,12);
+    InsertAtHead(head,tail,18);
 
-    cout << tail->data << endl;
 
     print(head);
+     cout << tail->data << endl;
 
 }
