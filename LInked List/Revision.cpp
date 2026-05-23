@@ -27,7 +27,7 @@ void InsertAtTail(Node* &tail, int d){
 
 void print(Node* head){
  Node* temp = head;
- while(temp->level != NULL){
+ while(temp->next != NULL){
     cout << temp->data << endl;
     temp = temp -> next;
  }
