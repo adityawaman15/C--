@@ -21,6 +21,8 @@ void InsertAtHead(Node* &head, int d){
 
 }
 
+void InsertAtTail(){}
+
 void print(Node* &head){
     Node* temp = head;
 
@@ -38,8 +40,11 @@ int main(){
 
     //head pointed to node1
     Node* head = node1;
+    Node* tail = node1;
     InsertAtHead(head,12);
     InsertAtHead(head,18);
+
+    cout << tail->data << endl;
 
     print(head);
 
