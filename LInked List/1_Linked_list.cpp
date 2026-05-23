@@ -24,7 +24,7 @@ void InsertAtHead(Node* &head, int d){
 void InsertAtTail(Node* &tail, int d){
     Node* temp = new Node(d);
     tail ->next = temp;
-    tail = tail ->next;
+    tail = temp;
 }
 
 void print(Node* &head){
