@@ -6,49 +6,71 @@ class Node{
      int data;
      Node* next;
 
-     //constructor called
-     Node(int data){
-        this -> data = data;
-        this ->next = NULL;
+     Node(int d){
+        this->data = d;
+        this->next = NULL;
      }
 };
 
 void InsertAtHead(Node* &head, int d){
-    // new node created
     Node* temp = new Node(d);
     temp -> next = head;
     head = temp;
 
 }
-
 void InsertAtTail(Node* &tail, int d){
     Node* temp = new Node(d);
-    tail ->next = temp;
+    tail -> next = temp;
     tail = temp;
+
 }
 
-void print(Node* &head){
+void InsertAtPosition(Node* &head, Node* &tail,int position, int d){
     Node* temp = head;
-
-    while(temp!= NULL){
-        cout << temp->data << endl;
-        temp = temp -> next;
+    int cnt = 0;
+    if(position == 0){
+        InsertAtHead(head,d);
+        return;
     }
-    cout<< endl;
+
+    while( cnt < position-1){
+        temp = temp ->next;
+        cnt++;
+    }
+
+    if(temp->next == NULL){
+        InsertAtTail(tail,d);
+        return;
+    }
+
+    Node *NodetobeInserted = new Node(d);
+    NodetobeInserted->next = temp->next;
+    temp->next = NodetobeInserted;
+
+
+
 }
 
-
-
+void print(Node* head){
+ Node* temp = head;
+ while(temp!= NULL){
+    cout << temp->data << endl;
+    temp = temp -> next;
+ }
+}
 int main(){
-    Node* node1 = new Node(5);
 
-    //head pointed to node1
-    Node* head = node1;
-    Node* tail = node1;
-    InsertAtHead(head,4);
-    InsertAtTail(tail,12);
-    InsertAtTail(tail,18);
+    Node* Node1 = new Node(10);
+
+    Node* head = Node1;
+    Node* tail = Node1;
+    InsertAtHead(head,5);
+    InsertAtTail(tail,15);
+    InsertAtPosition(head,tail,0,2);
+    InsertAtPosition(head,tail,4,17);
+    
 
     print(head);
-
+    
 }
+
