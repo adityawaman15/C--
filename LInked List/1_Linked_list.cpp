@@ -34,8 +34,6 @@ void print(Node* &head){
 
 int main(){
     Node* node1 = new Node(5);
-    cout << node1->data << endl;
-    cout << node1->next << endl;
 
     //head pointed to node1
     Node* head = node1;
