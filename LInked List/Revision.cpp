@@ -35,6 +35,7 @@ void InsertAtPosition(Node* &head, Node* &tail,int position, int d){
 
     while( cnt < position){
         temp = temp ->next;
+        cnt++;
     }
 
     if(temp->next == NULL){
@@ -65,6 +66,9 @@ int main(){
     Node* tail = Node1;
     InsertAtHead(head,5);
     InsertAtTail(tail,15);
+    InsertAtPosition(head,tail,0,2);
+    InsertAtPosition(head,tail,4,17);
+    
 
     print(head);
     
