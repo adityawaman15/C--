@@ -21,7 +21,7 @@ void InsertAtHead(Node* &head, int d){
 }
 
 void print(Node* &head){
-    Node * temp = head;
+    Node* temp = head;
 
     while(temp!= NULL){
         cout << temp->data << endl;
@@ -33,7 +33,7 @@ void print(Node* &head){
 
 
 int main(){
-    Node* node1 = new Node();
+    Node* node1 = new Node(5);
     cout << node1->data << endl;
     cout << node1->next << endl;
 
