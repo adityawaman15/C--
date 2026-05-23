@@ -16,6 +16,7 @@ class Node{
 void InsertAtHead(Node* &head, int d){
     // new node created
     Node* temp = new Node(d);
+    temp -> next = head;
     head = temp;
 
 }
@@ -37,8 +38,6 @@ int main(){
 
     //head pointed to node1
     Node* head = node1;
-    print(head);
-
     InsertAtHead(head,12);
     InsertAtHead(head,18);
 
