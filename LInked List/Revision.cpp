@@ -10,12 +10,29 @@ class Node{
         this-> data = data;
         this-> next = NULL;
     }
+};
 
+void InsertAtHead(Node* &heads, int d){
+    Node* temp = new Node(d);
+    temp->next = heads;
+    heads = temp;
+}
 
+void InsertAtTail(Node* &tails, int d){
+    Node* temp = new Node(d);
+    tails->next = temp;
+    tails = temp;
 }
 
 
 
+
+
 int main(){
+    Node* Node1 = new Node(15);
+    
+    Node* heads = Node1;
+    Node* tails = Node1;
+
 
 }
