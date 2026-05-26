@@ -63,7 +63,7 @@
 
     }
 
-    void deleteNode(Node* &head, int position){
+    void deleteNode(Node* &head,Node* &tail, int position){
 
         if(position == 0){
             Node* temp = head;
@@ -87,6 +87,10 @@
             prev->next = curr->next;
             curr->next= NULL;
             delete curr;
+
+            if(prev->next = NULL){
+                tail = prev;
+            }
         }
     }
 
@@ -112,8 +116,8 @@
         print(head);
 
         cout << "With delete:-" << endl;
-        deleteNode(head,2);
-        deleteNode(head,3);
+        deleteNode(head,tail,2);
+        deleteNode(head,tail,3);
 
         print(head);
         
