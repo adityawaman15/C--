@@ -107,6 +107,13 @@ int main(){
     
 
     print(head);
+
+    cout << "With delete:-" << endl;
+    deleteNode(head,2);
+    deleteNode(head,3);
+
+    print(head);
+    
     
 }
 
