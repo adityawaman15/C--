@@ -97,31 +97,62 @@
 
     }
 
-    void DeleteNode(int position, Node* &head){
-        if(position == 0){
-            Node* temp = head;
-            temp->next->prev =NULL;
-            head = temp->next;
-            temp -> next = NULL;
-            delete temp;
-        }
-        else{
-            //deleting any middle or last node;
-            Node* curr = head;
-            Node* prev = NULL;
+    void DeleteNode(int position, Node* &head, Node* &tail){
 
-            int cnt = 0;
-            while(cnt < position){
-                prev = curr;
-                curr = curr->next;
-                cnt++;
-            }
+    // deleting first node
+    if(position == 0){
 
-            prev -> next = curr ->next;
-            curr -> next = NULL;
-            delete curr;
+        Node* temp = head;
+
+        head = temp->next;
+
+        if(head != NULL){
+            head->prev = NULL;
         }
+
+        // single node case
+        if(temp == tail){
+            tail = NULL;
+        }
+
+        temp->next = NULL;
+        temp->prev = NULL;
+
+        delete temp;
     }
+
+    else{
+
+        Node* curr = head;
+        Node* prevNode = NULL;
+
+        int cnt = 0;
+
+        while(cnt < position){
+
+            prevNode = curr;
+            curr = curr->next;
+            cnt++;
+        }
+
+        prevNode->next = curr->next;
+
+        // if not last node
+        if(curr->next != NULL){
+            curr->next->prev = prevNode;
+        }
+
+        // if deleting tail
+        if(curr == tail){
+            tail = prevNode;
+        }
+
+        curr->next = NULL;
+        curr->prev = NULL;
+
+        delete curr;
+    }
+}
 
     int main(){
         Node* node1 = new Node(10);
@@ -132,16 +163,26 @@
 
         insertAtHead(head,11);
         print(head);
+        cout << "head " << head->data << endl;
+        cout << "tail " << tail->data << endl;
 
         insertAtHead(head,13);
         print(head);
+        cout << "head " << head->data << endl;
+        cout << "tail " << tail->data << endl;
 
         insertAtHead(head,18);
         print(head);
+        cout << "head " << head->data << endl;
+        cout << "tail " << tail->data << endl;
 
         InsertNode(head,tail,1,12);
         print(head);
+        cout << "head " << head->data << endl;
+        cout << "tail " << tail->data << endl;
 
-        DeleteNode(3,head);
+        DeleteNode(3,head,tail);
         print(head);
+        cout << "head " << head->data << endl;
+        cout << "tail " << tail->data << endl;
     }
