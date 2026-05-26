@@ -113,7 +113,7 @@
             int cnt = 0;
             while(cnt < position){
                 prev = curr;
-                prev = prev->next;
+                curr = curr->next;
                 cnt++;
             }
 
