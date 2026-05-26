@@ -88,7 +88,7 @@
             curr->next= NULL;
             delete curr;
 
-            if(prev->next = NULL){
+            if(prev->next == NULL){
                 tail = prev;
             }
         }
