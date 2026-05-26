@@ -117,9 +117,11 @@
 
         cout << "With delete:-" << endl;
         deleteNode(head,tail,2);
-        deleteNode(head,tail,3);
+
 
         print(head);
+
+        cout << "heads = " << head->data << endl<< "tails = " << tail->data << endl;
         
         
     }
