@@ -24,10 +24,13 @@ void InsertAtTail(Node* &tails, int d){
     tails = temp;
 }
 
-
-
-
-
+void Print(Node* &heads){
+    Node* temp = heads;
+    while (temp != NULL){
+        cout << temp->data << endl;
+        temp = temp->next;
+    }
+}
 int main(){
     Node* Node1 = new Node(15);
     
