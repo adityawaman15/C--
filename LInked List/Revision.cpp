@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class Node(){
+class Node{
+    public:
     int data;
     Node* next;
 
@@ -120,6 +121,7 @@ int getlength(Node* &head){
         print(head);
 
         cout << "heads = " << head->data << endl<< "tails = " << tail->data << endl;
+        cout << "Length of Linked list = " << getlength(head) << endl;
         
         
     }
