@@ -27,6 +27,27 @@ Node* middle(Node* head){
 
 }
 
+Node* middle_optimised(Node *head){
+    //Single node or no node;
+    if(head == NULL || head -> next == NULL ){
+        return head;
+    }
+
+
+    Node* slow = head;
+    Node* fast = head;
+
+    while(fast != NULL){
+        fast = fast -> next;
+        if(fast!= NULL){
+            fast = fast ->next;
+        }
+
+        slow = slow -> next;
+    }
+    return slow;
+}
+
 int main(){
 
 }

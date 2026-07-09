@@ -28,9 +28,8 @@ void rev(Node* head, int k){
         forward = forward->next;}
         cnt++;
     }
-    head = curr;
     if(curr != NULL){
-        rev(head,k);
+        rev(head->next,k);
     }
     return;
 }

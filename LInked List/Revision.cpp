@@ -18,22 +18,15 @@ class Node{
         }
     }
 }
-
-void reverse(Node* &head){
-    Node* prev = NULL;
-    Node* curr = head;
-    Node* nxt = curr->next;
-
-    while(curr != NULL){
-        curr->next = prev;
-        prev = curr;
-        curr = nxt;
-        if(curr!= NULL){
-        nxt = curr->next;}
+;
+Node* reverse(Node* head){
+    if(head = NULL){
+        return head;
     }
 
-    head = prev;
-
+    reverse(head->next);
+    head->next->next = head;
+    head->next = NULL;
 
 }
 int main(){

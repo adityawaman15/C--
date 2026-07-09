@@ -122,6 +122,8 @@
         print(head);
 
         cout << "heads = " << head->data << endl<< "tails = " << tail->data << endl;
+
+        
         
         
     }
