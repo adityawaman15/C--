@@ -1,34 +1,36 @@
 #include <iostream>
+#include <map>
+
 using namespace std;
 
-class Node{
+class Node(
     public:
     int data;
     Node* next;
-    
+
     Node(int d){
         this->data = d;
-        Node* next = NULL;
+        this->next = NULL;
     }
-
-    ~Node(){
-        this>data = NULL;
-        if(this->next!= NULL){
-            this->next = NULL;
-        }
-    }
-}
+)
 ;
-Node* reverse(Node* head){
-    if(head = NULL){
-        return head;
+
+void detect(Node* head){
+    if(head == NULL){
+        cout << "NULL" << endl;
+        return;
     }
-
-    reverse(head->next);
-    head->next->next = head;
-    head->next = NULL;
-
+    Node* temp = head;
+    map<Node*,bool> visited;
+    while(temp!= NULL){
+        if(visited[temp] == true){
+            cout << "Loop detected" << endl;
+            return;
+        }
+        else{
+            visited[temp] = true;
+        }
+        temp = temp->next;
+    }
 }
-int main(){
-
-}
+int main(){}
