@@ -12,7 +12,7 @@ class Node{
 }
 
 void rev(Node* head, int k){
-    if(curr == NULL){
+    if(head == NULL){
         return;
     }
     Node* curr = head;
