@@ -29,6 +29,8 @@ int main(){
 
     st.pop();
     cout << "Top element after pop:" << st.top() << endl;
+
+
     
     cout << "Emptying elements | ";
     while(!st.empty()){
@@ -50,6 +52,8 @@ int main(){
         cout << temp.top() << " ";
         temp.pop();
     }
+
+
     return 0;
 
 }
