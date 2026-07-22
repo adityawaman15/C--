@@ -32,7 +32,7 @@ int main(){
     
     cout << "Emptying elements | ";
     while(!st.empty()){
-        cout << st.top() << " ";
+        cout << st.size() << " ";
         st.pop();
     }
     return 0;
