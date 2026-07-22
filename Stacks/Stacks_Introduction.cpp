@@ -37,5 +37,19 @@ int main(){
     }
     return 0;
 
+    /*A stack cannot be directly traversed, but by creating a copy and repeatedly acc
+    essing and popping the top element, we can traverse it without modifying the original stack.*/
+   
+    st.push(10);
+    st.push(5);
+    st.push(7);
+    st.push(8);
+    stack<int> temp(st);
+
+    while(!temp.empty()){
+        cout << temp.top() << " ";
+        temp.pop();
+    }
+    return 0;
 
 }
