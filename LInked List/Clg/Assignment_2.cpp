@@ -50,12 +50,12 @@ int main()
     int num;
     struct student records[20];
     
-    for (int i = 70, j = 0; j <20; j++){
+    for (int i = 90, j = 0; j <20; j++,i--){
         records[j]. marks = i;
     }
 
 
-    do
+    do{
         cout << "\nEnter:-" << endl;
         cout << "1 | Print Student Details" << endl;
         cout << "2 | Sort Students according to Marks" << endl;
@@ -64,11 +64,11 @@ int main()
         switch(num)
         {
             case 1:
-                print(record, 10);
+                print(records, 20);
                 break;
 
             case 2:
-                Bubble_Sort(record, 10);
+                Bubble_Sort(records, 20);
                 cout << "Array Sorted!" << endl;
                 break;
 
