@@ -7,6 +7,8 @@ struct student{
 };
 
 
+
+
 void Bubble_Sort(struct student arr[], int size)
 {   
     int count = 0;
@@ -35,6 +37,33 @@ void Bubble_Sort(struct student arr[], int size)
     cout << "Number of times swapped = " << count << endl;
 }
 
+void Bubble_Sort_Name(struct student arr[], int size)
+{   
+    int count = 0;
+    for(int i = 0; i < size - 1; i++)
+    {
+        bool swapped = false;
+        
+
+
+        for(int j = 0; j < size - i - 1; j++)
+        {
+            if(arr[j].name > arr[j + 1].name)
+            {
+                int temp = arr[j].name;
+                arr[j].name = arr[j + 1].name;
+                arr[j + 1].name = temp;
+                swapped = true;
+                count++;
+            }
+        }
+
+        if(!swapped)
+            break;
+    }
+    
+    cout << "Number of times swapped = " << count << endl;
+}
 void print(struct student arr[], int size)
 {
     for(int i = 0; i < size; i++)
