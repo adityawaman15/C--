@@ -28,6 +28,29 @@ void print(int arr[]){
 int main() {
     //Bubble sort
     int arr[10] = {34,654,234,235,65,34,23,65,76,10};
+    char flag;
+    int num;
+
+
+    do {
+        cout << "Enter :-" << endl; 
+        cout << "1 | To print the array " << endl;
+        cout << "2 | To sort the array " << endl;
+        cin >> num;
+
+        switch(num){
+            case (1):
+             print();
+            case (2):
+             Bubble_Sort();
+            default:
+             break;
+        }
+
+        cout << "Do you want to continue \"Y or N\" << endl;
+        
+    }
+    while(flag!= "Y");
 
 
 
