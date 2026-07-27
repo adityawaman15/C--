@@ -1,7 +1,13 @@
 #include <iostream>
 using namespace std;
 
-void Bubble_Sort(int arr[], int size)
+struct student{
+    char[20] name;
+    int marks;
+}records[20];
+
+
+void Bubble_Sort(struct student arr[], int size)
 {   
     int count = 0;
     for(int i = 0; i < size - 1; i++)
@@ -12,11 +18,11 @@ void Bubble_Sort(int arr[], int size)
 
         for(int j = 0; j < size - i - 1; j++)
         {
-            if(arr[j] > arr[j + 1])
+            if(arr[j].marks > arr[j + 1].marks)
             {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                int temp = arr[j].marks;
+                arr[j].marks = arr[j + 1].marks;
+                arr[j + 1].marks = temp;
                 swapped = true;
                 count++;
             }
@@ -29,36 +35,35 @@ void Bubble_Sort(int arr[], int size)
     cout << "Number of times swapped = " << count << endl;
 }
 
-void print(int arr[], int size)
+void print(int struct student arr[], int size)
 {
     for(int i = 0; i < size; i++)
-        cout << arr[i] << " ";
+        cout << arr[i].marks << " ";
 
     cout << endl;
 }
 
 int main()
 {
-    int arr[10] = {34,654,234,235,65,34,23,65,76,10};
 
     char flag;
     int num;
 
     do
-    {
+        record[20] = {43,64,76,87,56,45,45,76,98,98,67,65,87,65,45,45,67,97,48,92};
         cout << "\nEnter:-" << endl;
-        cout << "1 | Print Array" << endl;
-        cout << "2 | Sort Array" << endl;
+        cout << "1 | Print Student Details" << endl;
+        cout << "2 | Sort Students according to Marks" << endl;
         cin >> num;
 
         switch(num)
         {
             case 1:
-                print(arr, 10);
+                print(record, 10);
                 break;
 
             case 2:
-                Bubble_Sort(arr, 10);
+                Bubble_Sort(record, 10);
                 cout << "Array Sorted!" << endl;
                 break;
 
