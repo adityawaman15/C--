@@ -49,10 +49,13 @@ int main()
     char flag;
     int num;
     struct student records[20];
+    
+    for (int i = 70, j = 0; j <20; j++){
+        records[j]. marks = i;
+    }
 
 
     do
-        record[20] = {43,64,76,87,56,45,45,76,98,98,67,65,87,65,45,45,67,97,48,92};
         cout << "\nEnter:-" << endl;
         cout << "1 | Print Student Details" << endl;
         cout << "2 | Sort Students according to Marks" << endl;
