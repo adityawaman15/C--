@@ -123,3 +123,98 @@ int main()
     }while(choice != 5);
     return 0;
 }
+
+/*
+****MENU***
+
+1.Add Contacts
+2.Display Contacts
+3.Linear search
+4.Binary search
+5.Exit
+ Enter your choice: 1
+
+ Enter Name: Adiyta
+
+ Enter pn: 43242
+Do you want to add more contacts(Y/N):Y
+
+ Enter Name: Uday
+
+ Enter pn: 5434254
+Do you want to add more contacts(Y/N):Y
+
+ Enter Name: Ameya 
+
+ Enter pn: 134124
+Do you want to add more contacts(Y/N):Kunal
+
+ Enter Name: 
+ Enter pn: 5242452
+Do you want to add more contacts(Y/N):Don
+
+ Enter Name: 
+ Enter pn: 4323423 
+Do you want to add more contacts(Y/N):N
+
+****MENU***
+
+1.Add Contacts
+2.Display Contacts
+3.Linear search
+4.Binary search
+5.Exit
+ Enter your choice: 2
+
+****Phonebook Contacts***
+Sr.No   Name    Phone Number 
+1       Adiyta  43242
+2       Uday    5434254
+3       Ameya   134124
+4       unal    5242452
+5       on      4323423
+
+****MENU***
+
+1.Add Contacts
+2.Display Contacts
+3.Linear search
+4.Binary search
+5.Exit
+ Enter your choice: 3
+
+ Enter Name: Ameya.
+Contact not found
+****MENU***
+
+1.Add Contacts
+2.Display Contacts
+3.Linear search
+4.Binary search
+5.Exit
+ Enter your choice: 3
+
+ Enter Name: Ameya
+
+ Name:Ameya
+ Phone Number:134124
+****MENU***
+
+1.Add Contacts
+2.Display Contacts
+3.Linear search
+4.Binary search
+5.Exit
+ Enter your choice: 4
+
+Enter Name : Uday
+
+Name : Uday
+Phone Number : 5434254
+****MENU***
+
+1.Add Contacts
+2.Display Contacts
+3.Linear search
+4.Binary search
+5.Exit*/
