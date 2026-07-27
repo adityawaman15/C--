@@ -2,9 +2,9 @@
 using namespace std;
 
 struct student{
-    char[20] name;
+    char name[20];
     int marks;
-}records[20];
+};
 
 
 void Bubble_Sort(struct student arr[], int size)
@@ -35,7 +35,7 @@ void Bubble_Sort(struct student arr[], int size)
     cout << "Number of times swapped = " << count << endl;
 }
 
-void print(int struct student arr[], int size)
+void print(struct student arr[], int size)
 {
     for(int i = 0; i < size; i++)
         cout << arr[i].marks << " ";
@@ -48,6 +48,8 @@ int main()
 
     char flag;
     int num;
+    struct student records[20];
+
 
     do
         record[20] = {43,64,76,87,56,45,45,76,98,98,67,65,87,65,45,45,67,97,48,92};
