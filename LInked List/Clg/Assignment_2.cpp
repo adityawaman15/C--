@@ -47,10 +47,13 @@ int main() {
              break;
         }
 
-        cout << "Do you want to continue \"Y or N\" << endl;
+        cout << "Do you want to continue 'Y or N |' " << endl;
+        cin >> flag;
+
+
         
     }
-    while(flag!= "Y");
+    while(flag!= 'Y');
 
 
 
