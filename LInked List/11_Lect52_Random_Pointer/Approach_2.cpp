@@ -1,4 +1,6 @@
-    /*
+ //Time complexity O(n), spaceO(n)
+ 
+ /*
 // Definition for a Node.
 class Node {
 public:
