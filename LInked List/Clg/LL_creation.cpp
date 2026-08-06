@@ -16,7 +16,7 @@ int main(){
         cout << "3) Add Node in Between\n";
         cout << "4) Display\n";
         cout << "5) Delete\n";
-
+        cout << "6) Search\n"
         cout << "7) Exit\n\n";
         cout << "Enter your choice | ";
         cin >> ch;
