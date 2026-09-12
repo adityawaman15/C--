@@ -1,0 +1,2 @@
+/*Input Restrcited queue is a queue where push is possible only from the rear while pop can be used on both sides*/
+/*Output Restricted queue is a queue where push is possible from both sides but pop is possible only from the front*/

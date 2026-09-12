@@ -8,6 +8,8 @@ struct Node{
 
 int main(){
     int ch;
+    Node* head = NULL;
+
 
     do{
         cout << "\n *****SLL Menu*****\n";
