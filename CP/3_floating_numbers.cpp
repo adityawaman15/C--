@@ -6,8 +6,15 @@ int main(){
     cin.tie(0);
 
 
-    double x = 0.3*3+0.1;
+    double x = 0.3*3;
+
+    double y = 0.9;
+    /*A difficulty when using floating point numbers is that some numbers cannot
+be represented accurately as floating point numbers, and there will be rounding
+errors. For example, the result of the following code is surprising:
+*/
     printf("%.20f \n", x);
+    printf("%.20f \n", y);
 
 
 }
