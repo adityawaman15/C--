@@ -9,16 +9,18 @@ using namespace std;
 
 int main(){
 
-    // 1. Optimize standard I/O operations for speed
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout << "Hello, World!" << endl;
+        // 1. Optimize standard I/O operations for speed
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+        cout << "Hello, World!" << endl;
 
-    int x;
+        int x;
 
-    while (cin >> x) {
-        cout << "Running" << x << "\n";
-    }
+        cout << "Enter\t";
+
+        while (cin >> x) {
+            cout << "Running" << x << "\n";
+        }
 
 
 }
