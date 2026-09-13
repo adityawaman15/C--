@@ -18,7 +18,9 @@ int main(){
 
         cout << "Enter\t";
 
-       
+        while (cin >> x) {
+            cout << "Running" << x << "\n";
+        }
 
 
 }
