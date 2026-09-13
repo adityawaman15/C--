@@ -8,6 +8,18 @@ they are available automatically.
 using namespace std;
 
 int main(){
+
+    // 1. Optimize standard I/O operations for speed
+    ios::sync_with_stdio(0);
+    cin.tie(0);
     cout << "Hello, World!" << endl;
+
+    int x;
+
+    while (cin >> x) {
+        cout << "Running" << x << "\n";
+    }
+
+
 }
 
