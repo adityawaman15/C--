@@ -16,5 +16,12 @@ errors. For example, the result of the following code is surprising:
     printf("%.20f \n", x);
     printf("%.20f \n", y);
 
+    if(abs(x-y) < 1e-9){
+        cout << "x and y are same";
+    }
+    else{
+        cout << "they are not same";
+    }
+
 
 }
