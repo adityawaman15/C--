@@ -51,7 +51,7 @@ void LevelOrderTraversal(node* root){
 
             }
         }
-
+        else{
         if(temp->left){
             q.push(temp->left);
         }
@@ -59,6 +59,7 @@ void LevelOrderTraversal(node* root){
         if(temp->right){
             q.push(temp->right);
         }
+    }
     }
 }
 
