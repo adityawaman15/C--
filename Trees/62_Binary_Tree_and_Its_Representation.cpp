@@ -20,11 +20,12 @@ node* BuildTree(node* root){
             int data;
             cout << "Enter the data:- ";
             cin >> data;
-            root = new node(data);
+            
             
             if(data == -1){
                 return NULL;
             }
+            root = new node(data);
 
             cout << "Enter data for inserting in left of " << data << endl;
             root->left = BuildTree(root->left);
@@ -39,8 +40,9 @@ void LevelOrderTraversal(node* root){
     q.push(NULL);
 
     while(!q.empty()){
+
         node* temp = q.front();
-        cout << temp->data << " ";
+        
         q.pop();
 
 
@@ -52,6 +54,7 @@ void LevelOrderTraversal(node* root){
             }
         }
         else{
+        cout << temp->data << " ";
         if(temp->left){
             q.push(temp->left);
         }
@@ -71,7 +74,7 @@ int main(){
     //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
 
 
-    cout << "Tree is | ";
+    cout << "Tree is:- \n";
     LevelOrderTraversal(Root);
     
 
