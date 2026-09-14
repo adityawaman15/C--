@@ -20,7 +20,7 @@ node* BuildTree(node* root){
             int data;
             cout << "Enter the data:- ";
             cin >> data;
-            node* root = new node(data);
+            root = new node(data);
             
             if(data == -1){
                 return NULL;
