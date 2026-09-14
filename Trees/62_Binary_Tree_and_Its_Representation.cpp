@@ -37,7 +37,7 @@ void LevelOrderTraversal(node* root){
     queue <node*> q;
     q.push(root);
 
-    while(q.empty()){
+    while(!q.empty()){
         node* temp = q.front();
         cout << temp->data << " ";
         q.pop();
@@ -55,7 +55,7 @@ void LevelOrderTraversal(node* root){
 
 int main(){
 
-    node* Root;
+    node* Root = NULL;
     BuildTree(Root);
     //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
 
