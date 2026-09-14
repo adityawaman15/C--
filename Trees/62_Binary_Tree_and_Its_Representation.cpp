@@ -33,11 +33,35 @@ node* BuildTree(node* root){
             return root;
         }
 
+void LevelOrderTraversal(node* root){
+    queue <node*> q;
+    q.push(root);
+
+    while(q.empty()){
+        node* temp = q.front();
+        cout << temp->data << " ";
+        q.pop();
+
+        if(temp->left){
+            q.push(temp->left);
+        }
+
+        if(temp->right){
+            q.push(temp->right);
+        }
+    }
+}
+
 
 int main(){
 
     node* Root;
     BuildTree(Root);
+    //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+
+
+    cout << "Tree is | ";
+    LevelOrderTraversal(Root);
     
 
 }
