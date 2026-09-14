@@ -18,10 +18,14 @@ int main(){
 
         cout << "Enter\t";
 
-        while (cin >> x) {
-            cout << "Running" << x << "\n";
-        }
-
 
 }
+
+/*In some contest systems, files are used for input and output. An easy solution
+for this is to write the code as usual using standard streams, but add the following
+lines to the beginning of the code:
+freopen("input.txt", "r", stdin);
+freopen("output.txt", "w", stdout);
+After this, the program reads the input from the file ”input.txt” and writes the
+output to the file ”output.txt”*/
 

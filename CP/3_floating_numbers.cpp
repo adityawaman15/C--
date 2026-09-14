@@ -5,7 +5,12 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
 
+    // programs need to be written as fast as possible, that is why typedef is used to shorten the datatypes
     typedef double d;
+
+    typedef vector<int> vi;
+    typedef pair<int,int> pi;
+
 
 
     d x = 0.3*3;
