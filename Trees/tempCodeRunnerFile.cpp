@@ -1,1 +1,10 @@
-1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    cout << "sjjaskasd";
+    printf("Hellow World");
+}
