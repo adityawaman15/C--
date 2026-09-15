@@ -25,3 +25,12 @@ Node* LevelOrderTraverse(Node* Root){
 
 }
 */
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+    vector<int> ans (5);
+    cout << ans[0];
+}
