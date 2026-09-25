@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void palindrome(string s, char ch, int & coins){
+int palindrome(string s, char ch, int coins){
     int i = 0;
-    int j = s.length();
+    int j = s.length()-1;
 
     while(i<j){
         if(s[i] != s[j]){
@@ -18,6 +18,8 @@ void palindrome(string s, char ch, int & coins){
         }
         i++;j--;
     }
+
+    return coins;
 
 }
 
@@ -37,9 +39,9 @@ int main() {
         for(int i = 0; i<n;i++){
             cin >> s[i];
         }
-        palindrome(s,c,coins);
+       
 
-        cout << coins << "\n";
+        cout << palindrome(s,c,coins) << "\n";
 
 
     }
