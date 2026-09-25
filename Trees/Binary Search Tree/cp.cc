@@ -7,6 +7,8 @@ int palindrome(string s, char ch, int coins){
 
     while(i<j){
         if(s[i] != s[j]){
+
+            cout << s[i] << " " << s[j] << endl;
             if(s[i] != ch){
                 s[i] = ch;
                 coins++;
@@ -36,9 +38,7 @@ int main() {
 
         cin >> n >> c;
 
-        for(int i = 0; i<n;i++){
-            cin >> s[i];
-        }
+        cin >> s;
        
 
         cout << palindrome(s,c,coins) << "\n";
