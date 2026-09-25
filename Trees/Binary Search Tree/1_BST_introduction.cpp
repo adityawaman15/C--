@@ -62,12 +62,15 @@ void InsertIntoBst(Node* &root,int data){
 
 void takeInput(Node* &root){
     int data;
-    cout << "Enter data | ";
+    cout << "Enter root | ";
     cin >> data;
+    cout << "\n";
 
     while(data != -1){
         InsertIntoBst(root,data);
+        cout << "Enter data | ";
         cin >> data;
+        cout << "\n";
     }
 }
 
