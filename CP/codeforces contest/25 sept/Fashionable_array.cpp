@@ -24,38 +24,28 @@ int main() {
         for(int i = 0; i<n;i++){
             cin >> arr[i];
             count[arr[i]]++;
-
+            if(count[arr[i]] > max_count){
+                max_count++;
+            }
         }
 
        vector<vector<int>> ans;
 
-       for(auto k:count){
-        int max_count = k.second;
-        for(int l = 0; l < max_count;l++){
-            cout << k.first << " ";
-            count[k.first]--;
-        }
-        
        
+
+       for(int i = 0; i <max_count;i++){
         for(auto j:count){
-            for(int i = 0; i < max_count;i++){
             if(j.second >= 1){
                 cout << j.first << " ";
                 count[j.first]--;
             }
-            else{
-                break;
-            }
         }
-        }
-
-
        }
 
        cout << "\n";
-    }
 
 
     }
 
 
+}
