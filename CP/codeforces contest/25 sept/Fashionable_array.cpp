@@ -37,10 +37,10 @@ int main() {
             k.second--;
         }
         
-       for(int i = 0; i <max_count;i++){
+       
         int curr_count = max_count;
         for(auto j:count){
-            if(j.second >= curr_count){
+            if(j.second >= 1){
                 cout << j.first << " ";
                 j.second--;
             }
@@ -54,4 +54,3 @@ int main() {
     }
 
 
-}
