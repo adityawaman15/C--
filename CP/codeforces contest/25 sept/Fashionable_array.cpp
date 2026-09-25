@@ -29,16 +29,11 @@ int main() {
 
        vector<vector<int>> ans;
 
-       for(auto i: count){
-        cout << "count of " << i.first << " = " << i.second << endl;
-       }
-
-
        for(auto k:count){
         int max_count = k.second;
         for(int l = 0; l < max_count;l++){
             cout << k.first << " ";
-            k.second--;
+            count[k.first]--;
         }
         
        
@@ -46,7 +41,7 @@ int main() {
             for(int i = 0; i < max_count;i++){
             if(j.second >= 1){
                 cout << j.first << " ";
-                j.second--;
+                count[j.first]--;
             }
             else{
                 break;
@@ -56,6 +51,8 @@ int main() {
 
 
        }
+
+       cout << "\n";
     }
 
 
