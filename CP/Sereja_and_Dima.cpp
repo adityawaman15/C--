@@ -9,11 +9,10 @@ int main(){
     int n;
     cin >> n;
     
-    vector<int> arr;
-    int x;
+    vector<int> arr (n);
 
     for(int i = 0; i < n; i++){
-        arr.push_back(cin >> x);
+        cin >> arr[i];
     }
 
     int i = 0;
@@ -26,7 +25,7 @@ int main(){
         if(arr[i] > arr[j]){
             cout << arr[i] << " ";
             if(flag){
-                a+= arr[i];
+                a += arr[i];
                 flag = !flag;
             }
             else{
@@ -38,11 +37,11 @@ int main(){
         else{
             cout << arr[j] << " ";
             if(flag){
-                b+= arr[i];
+                b += arr[j];
                 flag = !flag;
             }
             else{
-                a+= arr[i];
+                a += arr[j];
                 flag = !flag;
             }
             j--;
