@@ -20,15 +20,19 @@ int main(){
         int ans[n];
         int cnt = 0;
         while(i<=j){
-            ans[cnt] = arr[i];
+            cout << arr[i] << " ";
             i++;
             cnt++;
             if(cnt < n){
-            ans[cnt] = arr[j];}
+            cout << arr[j] << " ";}
             j--;
             cnt++;
 
         }
+
+        cout << "\n";
+
+        
 
 
     }
