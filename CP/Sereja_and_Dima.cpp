@@ -9,9 +9,11 @@ int main(){
     int n;
     cin >> n;
     
-    vector<int> arr(n);
+    vector<int> arr;
+    int x;
+
     for(int i = 0; i < n; i++){
-        cin >> arr[n];
+        arr.push_back(cin >> x);
     }
 
     int i = 0;
@@ -22,6 +24,7 @@ int main(){
     bool flag =1;
     while(i<j){
         if(arr[i] > arr[j]){
+            cout << arr[i] << " ";
             if(flag){
                 a+= arr[i];
                 flag = !flag;
@@ -33,6 +36,7 @@ int main(){
             i++;
         }
         else{
+            cout << arr[j] << " ";
             if(flag){
                 b+= arr[i];
                 flag = !flag;
