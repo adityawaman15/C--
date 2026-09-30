@@ -21,7 +21,7 @@ int main(){
                 continue;
             }
             for(int j = i+1; j < n;j++){
-                if(arr[j] - k == arr[i]){
+                if((arr[j] + arr[i]) == k){
                     score++;
                     arr[i] = arr[j] = -1;
                       }                
