@@ -10,24 +10,26 @@ int main(){
     while(T--){
         int n;
         cin >> n;
-        int i =1;
+        int i =0;
         int j = n-1;
         int arr[n];
         for(int i = 0;i<n;i++){
             cin >> arr[i];
         }
 
-        while(i<j){
-            swap(arr[i],arr[j]);
+        int ans[n];
+        int cnt = 0;
+        while(i<=j){
+            ans[cnt] = arr[i];
             i++;
+            cnt++;
+            if(cnt < n){
+            ans[cnt] = arr[j];}
+            j--;
+            cnt++;
+
         }
 
-        
-        for(int i = 0; i < n; i++){
-            cout << arr[i] << " ";
-        }
-
-        cout << "\n";
 
     }
         
