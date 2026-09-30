@@ -22,8 +22,10 @@ int main(){
     int b;
     bool flag =1;
     while(i<j){
+        cout << "flag = " << flag << endl;
         if(arr[i] > arr[j]){
             cout << arr[i] << " ";
+            
             if(flag){
                 a += arr[i];
                 flag = !flag;
