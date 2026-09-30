@@ -13,10 +13,8 @@ int main(){
         int n;
         cin >> n;
 
-        int arr[n];
-        for(int i = 0; i < n; i++){
-            cin >> arr[i];
-        }
+        string arr;
+        cin >> arr;
 
         int minus = 0;
         int i = 0;
@@ -29,9 +27,13 @@ int main(){
             else{
                 break;
             }
+            i++;
+            j--;
         }
 
         cout << n - minus << "\n";
+
+        // 1 3 100;
 
 
     }
