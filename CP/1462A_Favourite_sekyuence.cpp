@@ -10,15 +10,16 @@ int main(){
     while(T--){
         int n;
         cin >> n;
-        int i =0;
+        int i =1;
         int j = n-1;
         int arr[n];
-        while(i<=j){
+        for(int i = 0;i<n;i++){
             cin >> arr[i];
+        }
+
+        while(i<j){
+            swap(arr[i],arr[j]);
             i++;
-            if(i<=j){
-            cin >> arr[j];}
-            j--;
         }
 
         
