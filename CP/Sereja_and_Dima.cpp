@@ -18,13 +18,13 @@ int main(){
     int i = 0;
     int j = n-1;
 
-    int a;
-    int b;
+    int a= 0;
+    int b = 0;
     bool flag =1;
-    while(i<j){
-        cout << "flag = " << flag << endl;
+    while(i<=j){
+
         if(arr[i] > arr[j]){
-            cout << arr[i] << " ";
+  
             
             if(flag){
                 a += arr[i];
@@ -37,13 +37,13 @@ int main(){
             i++;
         }
         else{
-            cout << arr[j] << " ";
+
             if(flag){
-                b += arr[j];
+                a += arr[j];
                 flag = !flag;
             }
             else{
-                a += arr[j];
+                b += arr[j];
                 flag = !flag;
             }
             j--;
@@ -52,6 +52,5 @@ int main(){
 
     cout << a << " "<< b << "\n";
 
-    // 4 4 1 2 10
 
 }
