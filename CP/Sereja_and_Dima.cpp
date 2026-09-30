@@ -30,6 +30,7 @@ int main(){
                 b+= arr[i];
                 flag = !flag;
             }
+            i++;
         }
         else{
             if(flag){
@@ -40,6 +41,7 @@ int main(){
                 a+= arr[i];
                 flag = !flag;
             }
+            j--;
         }
     }
 
