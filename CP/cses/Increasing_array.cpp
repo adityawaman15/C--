@@ -13,6 +13,7 @@ int main(){
         int x;
         cin >> arr[i];
         arr[i] -= i;
+        cout << arr[i] << " ";
         max_e = max(max_e,arr[i]);
     }
     long long moves = 0;
