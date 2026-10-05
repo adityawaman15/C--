@@ -7,15 +7,15 @@ int main(){
     long long n;
     cin >> n;
     int arr[n];
-    unordered_map <int,bool> mark;
+
     for(int i = 0; i < n; i++){
         int x;
-        cin >> x;
-        arr[i] = x-i;
+        cin >> arr[i];
+        arr[i] -= i;
     }
 
     for(int i = 0; i < n;i++){
-        cout << arr[i];
+        cout << arr[i] << " ";
         
     }
 
