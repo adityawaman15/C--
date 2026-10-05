@@ -6,7 +6,7 @@ int main(){
     cin.tie(0);
     long long n;
     cin >> n;
-    int arr[n];
+    vector<int> arr(n);
 
     for(int i = 0; i < n; i++){
         int x;
@@ -14,10 +14,10 @@ int main(){
         arr[i] -= i;
     }
 
-    for(int i = 0; i < n;i++){
-        cout << arr[i] << " ";
-        
-    }
+    int max_e = max_element(arr.begin(),arr.end());
+
+
+
 
     //5 3 2 5 1 7
 
