@@ -9,10 +9,12 @@
         int arr[n];
 
         long long count = 0;
+        cin >> arr[0];
 
         for(int i = 1; i < n; i++){
-            
-            count += arr[i] - arr[i-1] + 1;
+
+            cin >> arr[i]; 
+            count += arr[i] - arr[i-1] -1;
  
         }
 
