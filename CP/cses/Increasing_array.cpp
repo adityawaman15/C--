@@ -9,7 +9,7 @@ int main(){
     vector<int> arr(n);
     int max_e = INT_MIN;
 
-    for(int i = 0; i < n; i++){
+    for(int i = arr[0]; i < arr[0] + n; i++){
         int x;
         cin >> arr[i];
         arr[i] -= i;
