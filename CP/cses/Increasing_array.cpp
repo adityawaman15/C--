@@ -7,14 +7,21 @@ int main(){
     long long n;
     cin >> n;
     vector<int> arr(n);
+    int max_e = INT_MIN;
 
     for(int i = 0; i < n; i++){
         int x;
         cin >> arr[i];
         arr[i] -= i;
+        max_e = max(max_e,arr[i]);
     }
+    long long moves = 0;
 
-    int max_e = max_element(arr.begin(),arr.end());
+    for(int i = 0; i < n;i++){
+        moves += (max_e - arr[i]);
+    }
+    cout << moves;
+;
 
 
 
