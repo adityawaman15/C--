@@ -72,7 +72,12 @@ int main(){
     cout << "Enter target to search | ";
     int t;
     cin >> t;
-    search(root,t);
+    if(search(root,t)){
+        cout << "Element is present\n";
+    }
+    else{
+        cout << "Element not found!\n";
+    }
 
    
 
