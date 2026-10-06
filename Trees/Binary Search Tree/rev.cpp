@@ -15,6 +15,23 @@ class Node{
 
 };
 
+bool search (Node* root, int target){
+    if(root == NULL){
+        return false;
+    }
+
+    
+    if(root->data == target){
+        return true;
+    }
+    else if(target> root->data){
+        return search(root->right,target);
+    }
+    else{
+        return search(root->left,target);
+    }
+}
+
 
 Node* InsertintoBst(Node* root, int d){
     //base case
@@ -51,6 +68,11 @@ int main(){
 
     Node* root = NULL;
     TakeInput(root);
+
+    cout << "Enter target to search | ";
+    int t;
+    cin >> t;
+    search(root,t);
 
    
 
