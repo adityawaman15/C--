@@ -16,6 +16,8 @@
             cin >> arr[i];
             if(arr[i] < arr[i-1]){
                 count += arr[i-1] - arr[i];
+                arr[i] += arr[i-1] - arr[i];
+                
             }
         }
         cout << count;
