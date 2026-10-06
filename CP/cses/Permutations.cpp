@@ -8,7 +8,7 @@ int main(){
     long long n;
     cin >> n;
 
-    if(n < 5){
+    if(n> 1 && n < 5){
         cout << "NO SOLUTION";
     }
     else{
