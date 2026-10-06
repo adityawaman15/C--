@@ -41,6 +41,7 @@ void TakeInput(Node* &root){
 
     while(d != -1){
         InsertintoBst(root,d);
+        cin >> d;
     }
 }
 
