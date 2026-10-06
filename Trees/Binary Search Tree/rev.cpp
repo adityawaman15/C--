@@ -57,7 +57,7 @@ void TakeInput(Node* &root){
     cin >> d;
 
     while(d != -1){
-        InsertintoBst(root,d);
+        root = InsertintoBst(root,d);
         cin >> d;
     }
 }
@@ -78,6 +78,8 @@ int main(){
     else{
         cout << "Element not found!\n";
     }
+
+    //3 4 6 1 8 2 10 43 23 -1 4
 
    
 
